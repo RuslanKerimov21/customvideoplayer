@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>player</title>
+	<!-- Подключение стилей начало -->
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<!-- Подключение стилей конец -->
+</head>
+<body>
+    <main class="main">
+		<div class="container d-flex a-center j-center fullscreen">
+			<div class="player" id="player">
+				<div class="player-content d-flex a-center">
+					<div class="video-main d-flex j-center a-center">
+						<video class="video-m" src="video/«Адаптис» промо.mp4"></video>
+					</div>
+					<div class="video-language__therapist d-flex a-center j-center">
+						<video class="video-t" src="video/Начинающий сурдопереводчик.mp4"></video>
+					</div>
+				</div>
+				<div class="player-control">
+					<div class="player-progress">
+						<div class="player-progres__bar" data-value="1"></div>
+					</div>
+					<div class="player-controls d-flex a-center j-between">
+						<div class="player-button">
+							<button class="play" id="play">
+								<img src="img/icon/iconmonstr-play-thin.svg" alt="paly">
+							</button>
+							<button class="pause" id="pause">
+								<img src="img/icon/iconmonstr-pause-thin.svg" alt="pause">
+							</button>
+							<button class="stop" id="stop">
+								<img src="img/icon/iconmonstr-shape-8.svg" alt="stop">
+							</button>
+						</div>
+						<div class="player-times"></div>
+						<div class="player-setting d-flex">
+							<div class="fullvideo">
+								<button class="full" id="full">
+									<img src="img/icon/iconmonstr-fullscreen-11.svg" alt="full">
+								</button>
+							</div>
+							<div class="setting-therapist">
+								<button class="setting" id="setting">
+									<img src="img/icon/iconmonstr-gear-thin.svg" alt="setting">
+								</button>
+								<div class="therapist">
+									<div class="setting-control d-flex a-center j-between">
+										<label for="check" class="d-flex text">
+											Выключить сурдопереводчик
+										</label>
+										<input type="checkbox" id="check" class="custom">
+									</div>
+									<div class="setting-control d-flex a-center j-between">
+										<label for="check-to" class="d-flex text text-audio">
+											Выключить звук
+										</label>
+										<input type="checkbox" id="check-to" class="mute">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Подключение скриптов начало -->
+	<script src="js/app.js" type="module"></script>
+	<!-- Подключение скриптов конец -->
+</body>
+</html>
